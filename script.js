@@ -52,13 +52,6 @@ function playerChoice(){
  });
 }
 
-getScore(variavel){
-    if (variavel == 0){
-        playerScore = 0;
-        computerScore = 0;
-    }
-}
-
  const div = document.querySelector("div");
  const result = document.createElement("p");
  div.append(result);
@@ -67,8 +60,8 @@ getScore(variavel){
 const announce = document.createElement("p");
 div.append(announce);
 
-let playerScore;
-let computerScore;
+let playerScore = 0;
+let computerScore = 0;
 
 announce.textContent = ` Player Score: ${playerScore} X Compuputer Score ${computerScore}`
 
